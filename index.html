@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>rami</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.cell {
+  vertical-align: top;
+  padding: 20px;
+}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa w3-xxlarge"></i>
+    <p>RAMI</p>
+  </a>
+  <a href="#sentinel" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa w3-xxlarge"></i>
+    <p>SENTINEL</p>
+  </a>
+  <a href="#pft" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa w3-xxlarge"></i>
+    <p>PFT</p>
+  </a>
+  <a href="#orangegate" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa w3-xxlarge"></i>
+    <p>ORANGE GATE</p>
+  </a>
+  <a href="#orbit" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa w3-xxlarge"></i>
+    <p>ORBIT</p>
+  </a>
+  <a href="#fumigate" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa w3-xxlarge"></i>
+    <p>FUMIGATE</p>
+  </a>
+  
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#sentinel" class="w3-bar-item w3-button" style="width:25% !important">SENTINEL</a>
+    <a href="#pft" class="w3-bar-item w3-button" style="width:25% !important">PFT</a>
+    <a href="#orangegate" class="w3-bar-item w3-button" style="width:25% !important">ORANGE GATE</a>
+    <a href="#orbit" class="w3-bar-item w3-button" style="width:25% !important">ORBIT</a>
+    <a href="#fumigate" class="w3-bar-item w3-button" style="width:25% !important">FUMIGATE</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">rami</h1>  
+  </header>
+
+  <!-- About -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    
+    <h3 class="w3-padding-16 w3-text-light-grey">What I do</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">
+      I've been writing audio software for five years.
+      The past four years have been focused on the JUCE framework.
+      I created Vain Audio a few years back with Bradly Landucci partially as a creative outlet and partially as a learning experience.
+      Couple years later we've released seven fully featured audio plugins.
+      Check them out at <a href="https://vainaudio.com/">VainAudio.com</a>
+      <br/>
+      <br/>
+      This site serves as a general chronological summary of my cooler work.
+    </p>
+  </div> 
+
+    <!-- Sentinel -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sentinel">
+    <h3 class="w3-padding-16 w3-text-light-grey">Sentinel</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="./assets/sentinel.webp" width="700" style="display:block; margin:auto;"></img>
+    <p class="cell w3-wide">
+      Sentinel is a banded distortion plugin with MIDI key tracking.
+      This lets you apply distortion only to specific harmonics in your sound.
+      The initial idea came out of using Fruity Envelope Controller to manually set Ohmicide's band cutoffs when a note is played.
+      This was kinda sloppy and didn't work very well so I decided to refine the idea into a dedicated plugin.
+    <br/>
+    <br/>  
+      Sentinel's distortion engine is a collection of effects with a simple modulation scheme applied to them.
+      Each selectable distortion type represents a signal flow and a set of weights that apply the modulators to the parameters.
+      Both large knobs, band high/low cutoffs, an LFO, and an envelope follower are used as modulators.
+    <br/>
+    <br/>
+      The whole modulation scheme is completely hidden from the user in the interest of ease of use, for now...
+    </p>
+    <p style="text-align: center;">
+      <a href="https://vainaudio.com/product/sentinel/">
+        Sentinel at Vain Audio
+      </a>
+    </p>
+    <p style="text-align: center;">
+      <a href="https://www.kvraudio.com/product/sentinel-by-vain-audio">
+        Sentinel at KVR
+      </a>
+    </p>
+  </div>
+
+  <!-- pft -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="pft">
+    <h3 class="w3-padding-16 w3-text-light-grey">PFT</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">
+      PanFilterTool (PFT) is filter plugin that allows for modulating filter parameters differently by audio channel.
+      Seven modulators and four macros can be applied to nearly every available parameter.
+      This allows you to effortlessly create dynamic sounds.
+    </p>
+    <table style="border-spacing: 20px 50px;">
+      <tr>
+        <td>
+          <img src="./assets/pft_assign_modulation.webp" width="500"></img>
+        </td>
+        <td class="cell w3-wide">
+          Assigning modulations to parameters is simple. Drag and drop a modulator onto an available
+          UI slider or open the modulation editor manually by clicking the button next to each slider.
+        <br/>
+        <br/>
+          I tried to communicate the functions of the modulation controls without too much text.
+          Where possible, icons describe what an interactable UI element does.
+          In any case PFT has a lot of tooltips.
+          A confused user can hover over pretty much anything and get a description of what it is.
+        <br/>
+        <br/>
+          Modulation is my favorite aspect of sound design. Its power and expressiveness is unmatched.
+          something about how great pft's interface is
+        </td>
+      </tr>
+      <tr>
+        <td class="cell w3-wide">
+          PFT comes with seven individual modulators.
+          Each modulator can be assigned to modulate any parameter in the plugin (besides its own).
+          <br/>
+          <br/>
+          Modulators and their parameters are allocated dynamically when the user chooses a new modulator type.
+          If I was designing this part of the code again I would rethink how modulator parameters work.
+          As it stands you have to assign each parameter to a macro if you want to change it from outside the plugin.
+          Feels kinda clunky.
+        </td>
+        <td>
+          <img src="./assets/pft_modulators.webp" width="500"></img></td>
+      </tr>
+      <tr>
+        <td>
+          <img src="./assets/pft_presets.webp" width="500"></img></td>
+        <td class="cell w3-wide">
+          The preset browser is powered by a value tree that syncs its contents to the preset directory on the users disk.
+          This is built on top of the <a href="https://github.com/SpartanJ/efsw">efsw</a> library.
+          <br/>
+          <br/>
+          I used juce::ValueTree pretty heavily throughout the implementation of PFT's UI.
+          The preset browser is no different.
+          Everything from loading presets to making arrow key selections in the selection popup is accomplished using them.
+          <br/>
+          <br/>
+          Getting everything right with integrating efsw into the project was one of the more tedious aspects of PFT.
+          Lots of weird little async things and threading issues to iron out...
+        </td>
+      </tr>
+    </table>
+    <p class="w3-wide">
+      PFT is the most complex and fully featured project I've worked on since launching Vain Audio.
+      It took around a year from start to finish.
+      During that time I made a lot of mistakes, fixed some of them, and learned a lot.
+      If you have a minute, check it out.
+      The demo is time unlimited.
+    </p>
+    <p style="text-align: center;">
+      <a href="https://vainaudio.com/learn/">
+        Read more ramblings about PFT
+      </a>
+    </p>
+    <p style="text-align: center;">
+      <a href="https://vainaudio.com/product/pft/">
+        PFT at Vain Audio
+      </a>
+    </p>
+    <p style="text-align: center;">
+      <a href="https://www.kvraudio.com/product/pft-by-vain-audio">
+        PFT at KVR
+      </a>
+    </p>
+  </div>    
+  
+  <!-- orange gate -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="orangegate">
+    <h3 class="w3-padding-16 w3-text-light-grey">Orange Gate</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="./assets/orange_gate.webp" width="700" style="display:block; margin:auto;"></img>
+    <p class="w3-wide">
+      Orange Gate is an extremely simple gating and compression plugin.
+      The focus here was on ease of use.
+      Thresholds are shown overlayed on the waveform in the visualizer and can be adjusted directly.
+    </p>
+    <p style="text-align: center;">
+      <a href="https://vainaudio.com/product/orange-gate/">
+        Orange Gate at Vain Audio
+      </a>
+    </p>
+    <p style="text-align: center;">
+      <a href="https://www.kvraudio.com/product/orange-gate-by-vain-audio">
+        Orange Gate at KVR
+      </a>
+    </p>
+  </div>
+
+  <!-- orbit -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="orbit">
+    <h3 class="w3-padding-16 w3-text-light-grey">Orbit</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="./assets/orbit.webp" width="700" style="display:block; margin:auto;"></img>
+    <p class="w3-wide">
+      Orbit is a delay plugin with a focus on rotation.
+      Each delay can be set to 'orbit' mode which simulates the input signal being rotated around the listeners head.
+      It's styled to resemble old space race era control panels with a hint of modern visualization.
+      <br/>
+      <br/>
+      I implemented the UI and small amount of the parameter handling code for Orbit.
+      This plugin got me interested in symmetry within plugin UIs.
+      Each plugin I've worked on since then has been mostly symmetrical.
+    </p>
+    <p style="text-align: center;">
+      <a href="https://vainaudio.com/product/orbit/">
+        Orbit at Vain Audio
+      </a>
+    </p>
+    <p style="text-align: center;">
+      <a href="https://www.kvraudio.com/product/orbit-by-vain-audio">
+        Orbit at KVR
+      </a>
+    </p>
+  </div>
+    
+  <!-- fumigate -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="fumigate">
+    <h3 class="w3-padding-16 w3-text-light-grey">Fumigate</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">
+      Fumigate is a multi band chorus and stereo expansion plugin.
+      Split out up to five bands and adjust stereo width parameters on each.
+    </p>
+    <table style="border-spacing: 20px 50px;">
+      <tr>
+        <td>
+          <img src="./assets/fumigate.webp" width="450"></img>
+        </td>
+        <td class="cell w3-wide">
+          The band splitter in Fumigate is templatized on a single BandCount static constant.
+          This means the total number of bands can be increased (theoretically) infinitely.
+          The insane compile times were really frustrating to work with.
+          But on the bright side the performance was slightly better.
+          <br/>
+          <br/>
+          Implementing the band splitter this way was as interesting as it was useless.
+        </td>
+      </tr>
+    </table>
+    <p style="text-align: center;">
+      <a href="https://vainaudio.com/product/fumigate/">
+        Fumigate at Vain Audio
+      </a>
+    </p>
+    <p style="text-align: center;">
+      <a href="https://www.kvraudio.com/product/fumigate-by-vain-audio">
+        Fumigate at KVR
+      </a>
+    </p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="contact">
+    <h3 class="w3-padding-16 w3-text-light-grey">Contact</h3>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p>Email: rami.hansen2@gmail.com</p>
+    </div><br>
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
+</html>
+
